@@ -531,3 +531,8 @@ All experiments use fixed seeds and are deterministic.
   framework; source of the standardization warning.
 - MLX: https://github.com/ml-explore/mlx
 - lingam package: https://github.com/cdt15/lingam
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE)
+file for details.
