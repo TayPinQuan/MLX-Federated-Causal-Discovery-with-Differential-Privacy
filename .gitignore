@@ -1,0 +1,173 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================
+# Virtual environments
+# ============================================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.python-version
+
+# ============================================================
+# Testing & coverage
+# ============================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+*.cover
+.cache
+
+# ============================================================
+# Jupyter notebooks
+# ============================================================
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+# Keep executed notebooks in notebooks/ (they document experiments),
+# but ignore scratch notebooks in the root.
+/*.ipynb
+
+# ============================================================
+# Type checkers / linters
+# ============================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+.pytype/
+
+# ============================================================
+# Data (large, downloadable, or proprietary)
+# ============================================================
+data/cache/
+data/raw/
+data/processed/
+*.h5
+*.hdf5
+*.parquet
+*.feather
+*.pkl
+*.pickle
+# Note: Sachs dataset is auto-downloaded to data/cache/ — never commit it.
+
+# ============================================================
+# Experiment outputs — selective
+# ============================================================
+# Commit: CSV results and summary PNGs referenced in README
+# Ignore: intermediate artifacts, per-run dumps, large logs
+
+results/*.log
+results/*.json
+results/tmp/
+results/runs/
+results/*_raw.csv
+results/*_debug.*
+
+# ============================================================
+# Models / checkpoints
+# ============================================================
+checkpoints/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.npz
+*.npy
+
+# ============================================================
+# OS-specific
+# ============================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Editor / IDE
+# ============================================================
+.vscode/
+!.vscode/settings.json.example
+!.vscode/launch.json.example
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+*.sublime-project
+
+# ============================================================
+# Environment & secrets
+# ============================================================
+.env
+.env.*
+!.env.example
+*.secret
+secrets.json
+
+# ============================================================
+# Ray / Flower simulation artifacts
+# ============================================================
+/tmp/ray/
+ray_results/
+session_latest/
+*.ray
+
+# ============================================================
+# Apple Silicon / MLX
+# ============================================================
+# MLX compiled kernels (if any)
+*.metallib
+*.air
+# Xcode / Swift
+*.xcuserstate
+xcuserdata/
+DerivedData/
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+!docs/**/*.log
+
+# ============================================================
+# Archives
+# ============================================================
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
